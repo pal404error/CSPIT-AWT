@@ -1,34 +1,38 @@
-  
-var CSPIT = {
-    yearOfEstablishment: 2005,
-    location: "Anand, Gujarat, India",
-    departments: ["CE", "IT", "CS", "EC", "EE", "CL", "ME"],
-    getDetails: function() {
-      console.log("Get Details: \n" + "\nYear of Establishment: " + this.yearOfEstablishment + "\nLocation: " + this.location + "\nDepartments: " + this.departments.join(", "));
+var nam = document.getElementById('name') ; 
+var uname = document.getElementById('uname') ; 
+var cpass = document.getElementById('cpass') ; 
+var gender = document.getElementsByName('gender') ; 
+var num = document.getElementById('num') ; 
+var email = document.getElementById('email') ; 
+var state = document.getElementById('state') ; 
+var agree = document.getElementById('agree') ; 
+var btn = document.getElementById('btn') ; 
+
+
+if(btn)
+btn.addEventListener("click", err);
+
+function err(){
+        // if(nam.value == '' || uname.value == '' || cpass.value == '' || gender.value == '' || num.value == '' || email.value == '' || state.value == '' || agree.value == '')
+        // {alert("*All fields should be filled") ;}
+        // else{
+        //         console.log('jhsbvhfd')
+        // }
+
+        if (isString(nam.value)){
+                console.log('success')
+        }else{
+                document.getElementById('error1').style.color = "red";
+                document.getElementById('error1').innerHTML = 'Should be string'
+        }
+        if (uname.value.isString ) {
+                
+        } else {
+                
+        }
+}
+
+function isString(x) {
+        return Object.prototype.toString.call(x) === '[object String]';
     }
-  };
-  
-  
-  CSPIT.CE = Object.create(null);
-  CSPIT.CE.totalStudents = 250;
-  CSPIT.CE.totalFaculty = 30;
-  CSPIT.CE.totalSemester = 8;
-  CSPIT.CE.Subjects = 20;
-  
-  CSPIT.getDetails();
-  // Retrieving all possible records from CSPIT
-  console.log("CE Department Details:");
-  for (var property in CSPIT.CE) {
-   
-      console.log(property + ": " + CSPIT.CE[property]);
-    
-  }
-  console.log("All CSPIT Records:");
-  for (var key in CSPIT) {
-      if (CSPIT.hasOwnProperty(key)) {
-      console.log(key + ": " + CSPIT[key]);
-      }
-  }
-  
-  
-  
+     

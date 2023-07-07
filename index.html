@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		form{
+			padding: 10px;
+			margin: 10px;
+			line-height: 30px;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<center>
+		<form onsubmit="submit()">
+			<tr>
+				<td><label>Full Name</label></td>
+				<td><input  name="" id="name" ></td>
+				<td><p id="error1"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>UserName</label></td>
+				<td><input type="text" name="" id="uname"></td>
+				<td><p id="error1"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>Password</label></td>
+				<td><input type="password" name="" id="pass"></td>
+				<td><p id="error2"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>Confirm Password</label></td>
+				<td><input type="password" name="" id="cpass"></td>
+				<td><p id="error3"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>Gender</label></td>
+				Male<input type="radio" name="gender" id="male">
+				Female<input type="radio" name="gender" id="female">
+				<td><p id="error4"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>Phone No.</label></td>
+				<input type="number" name="" id="num">
+				<td><p id="error5"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>	Email</label></td>
+				<td><input type="email" name="" id="email"></td>
+				<td><p id="error6"></p></td>
+			</tr><br>
+			<tr>
+				<td><label>State</label></td>
+				<td><select id="state">
+					<option>Gujarat</option>
+					<option>MH</option>
+					<option>UP</option>
+				</select></td>
+				<td><p id="error7"></p></td>
+			</tr>
+			<br>
+			<tr>
+				<td><label>Agreement  : </label><br></td>
+				<td>Agree? : <input type="checkbox" name="" id="agree">
+				</td>
+				<td><p id="error8"></p></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="" value="Register" id="btn"></td>
+				<td><p id="error9"></p></td>
+			</tr>
+		</form>
+	</center>
+	<script src="script.js"></script>
+</body>
+</html>
