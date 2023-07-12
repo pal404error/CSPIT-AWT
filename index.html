@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        table{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        table th{
+            background-color: #F7F7F7;
+            color: #333;
+            font-weight: bold;
+        }
+        table th, table td{
+            padding: 5px;
+            border-color: #ccc;
+        }
+		input[type="button"]{
+		background-color: #08F;
+		color:#fff;}
+    </style>
+</head>
+<body>
+    <table id="tblCustomers" cellpadding="0" cellspacing="0" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><input type="text" id="name" placeholder="Enter name" /></td>
+                <td><input type="text" id="country" placeholder="Enter Country" /></td>
+                <td><input type="button" onclick="Add(this)" value="Add" /></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

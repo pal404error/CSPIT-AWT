@@ -1,34 +1,13 @@
-  
-var CSPIT = {
-    yearOfEstablishment: 2005,
-    location: "Anand, Gujarat, India",
-    departments: ["CE", "IT", "CS", "EC", "EE", "CL", "ME"],
-    getDetails: function() {
-      console.log("Get Details: \n" + "\nYear of Establishment: " + this.yearOfEstablishment + "\nLocation: " + this.location + "\nDepartments: " + this.departments.join(", "));
-    }
-  };
-  
-  
-  CSPIT.CE = Object.create(null);
-  CSPIT.CE.totalStudents = 250;
-  CSPIT.CE.totalFaculty = 30;
-  CSPIT.CE.totalSemester = 8;
-  CSPIT.CE.Subjects = 20;
-  
-  CSPIT.getDetails();
-  // Retrieving all possible records from CSPIT
-  console.log("CE Department Details:");
-  for (var property in CSPIT.CE) {
-   
-      console.log(property + ": " + CSPIT.CE[property]);
-    
-  }
-  console.log("All CSPIT Records:");
-  for (var key in CSPIT) {
-      if (CSPIT.hasOwnProperty(key)) {
-      console.log(key + ": " + CSPIT[key]);
-      }
-  }
-  
-  
-  
+var name1 = document.getElementById("name");
+var country = document.getElementById("country");
+var table = document.getElementById("tblCustomers");
+function Add(hello) {
+    var nhel = hello.parentNode.parentNode.rowIndex;
+    var row = table.insertRow(nhel);
+    var cell1 = row.insertCell();
+    cell1.innerHTML = name1.value;
+    var cell2 = row.insertCell();
+    cell2.innerHTML = country.value;
+    name1.value = "";
+    country.value = "";
+}
