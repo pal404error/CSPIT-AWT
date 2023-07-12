@@ -13,11 +13,11 @@ if(btn)
 btn.addEventListener("click", err);
 
 function err(){
-        // if(nam.value == '' || uname.value == '' || cpass.value == '' || gender.value == '' || num.value == '' || email.value == '' || state.value == '' || agree.value == '')
-        // {alert("*All fields should be filled") ;}
-        // else{
-        //         console.log('jhsbvhfd')
-        // }
+        if(nam.value == '' || uname.value == '' || cpass.value == '' || gender.value == '' || num.value == '' || email.value == '' || state.value == '' || agree.value == '')
+        {alert("*All fields should be filled") ;}
+        else{
+                console.log('jhsbvhfd')
+        }
 
         if (isString(nam.value)){
                 console.log('success')
