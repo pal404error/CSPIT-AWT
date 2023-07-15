@@ -24,25 +24,32 @@
 		color:#fff;}
     </style>
 </head>
-<body>
+<body onload="load()" id="body">
+    <form action="">
+        <input type="text" id="name" placeholder="Enter name" />
+        <input type="text" id="country" placeholder="Enter Country" />
+        <input type="text" id="inst" placeholder="Enter institute"/>
+        <input type="text" id="hometown" placeholder="enter hometown"/>
+        <input type="text" id="bus" placeholder="Enter bus">
+        <input type="button" onclick="Add(this)" value="Add" />
+    </form>
     <table id="tblCustomers" cellpadding="0" cellspacing="0" border="1">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Country</th>
-                <th></th>
+                <th>institute</th>
+                <th>HomeTown</th>
+                <th>BUS</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-            <tr>
-                <td><input type="text" id="name" placeholder="Enter name" /></td>
-                <td><input type="text" id="country" placeholder="Enter Country" /></td>
-                <td><input type="button" onclick="Add(this)" value="Add" /></td>
-            </tr>
+            
         </tfoot>
     </table>
+    <div id="page"></div>
     <script src="script.js"></script>
 </body>
 </html>
